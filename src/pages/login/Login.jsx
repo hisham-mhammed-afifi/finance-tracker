@@ -6,11 +6,11 @@ import styles from "./Login.module.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { error, isPending } = useLogin();
+  const { login, error, isPending } = useLogin();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password);
+    login(email, password);
   };
   return (
     <form onSubmit={handleSubmit} className={styles["login-form"]}>

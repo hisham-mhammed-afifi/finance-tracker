@@ -4,6 +4,14 @@
   max-width: 960px;
   margin: 60px auto;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+  }
+}
 .content {
   padding-right: 30px;
 }
