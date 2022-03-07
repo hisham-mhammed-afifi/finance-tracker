@@ -6,7 +6,7 @@ import styles from "./Login.module.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login, error, isPending } = useLogin();
+  const { error, isPending } = useLogin();
 
   const handleSubmit = (e) => {
     e.preventDefault();
