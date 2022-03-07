@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
-import { useCallback } from "react/cjs/react.production.min";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
